@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Border Radius CSS Generator</title>
+</head>
+<body>
+    <!-- Creacion de un cuadro en general -->
+    <div class="entorno">
+        <h1 class="centrado">Online Border Radius Generator</h1>
+                <div class="ConfRow ">
+                    <table id="BordeTabla">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="fondo BorIzqSup">
+                                        <input id="box" value="0" min="0" type="number">
+                                        <div class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="0" class="slider" id="myRange" >
+                                          </div>
+                                        <label><input type="checkbox" name="InsertarTodos" /> All the same</label>
+                                    </div>
+                                </td>
+                                <td class="centrado">
+                                    &nbsp;
+                                </td>
+                                <td style="vertical-align: bottom;">
+                                    <div class="fondo BorDerSup">
+                                        <input id="box" value="0" min="0" type="number">
+                                        <div class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                                          </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> &nbsp; </td>
+                                <td>
+                                    <div >
+                                        <div id="BordeFondo" >
+                                            <textarea cols="20" name="comentario" rows="3" id="ConfigArea" spellcheck="false">
+                                                -webkit-border-radius: 0px;
+                                                -moz-border-radius: 0px;
+                                                border-radius: 0px;
+                                            </textarea>
+                                            <div id="buttonCopy">Click to copy</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td> &nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="fondo BorIzqInf">
+                                        <input id="box" value="0" min="0" type="number">
+                                        <div class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                                          </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>
+                                    <div class="fondo BorDerInf">
+                                    
+                                        <input id="box" value="0" min="0" type="number">
+                                        <div class="slidecontainer">
+                                            <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                                          </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ConfRow">
+                    <div class="ConfRow">
+                        <div class="ConfRowLetra">
+                            Width: <span class="resetear" >1</span>
+                        </div>
+                        <div class="ConfRowButton" style="max-width: 300px;float: left;">
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ConfRow">
+                    <div class="ConfRow">
+                        <div class="ConfRowLetra">
+                            Style:
+                        </div>
+                        <div class="ConfRowButton">
+                            <div id="borderStyle">
+                                <div id="StyleBorde">
+                                    <a style="border-style: solid;" title="solid" class="selected">solid</a>
+                                    <a style="border-style: dotted;" title="dotted">dotted</a>
+                                    <a style="border-style: dashed;" title="dashed">dashed</a>
+                                    <a style="border-style: double;" title="double">double</a>
+                                    <a style="border-style: groove;" title="groove">groove</a>
+                                    <a style="border-style: ridge;" title="ridge">ridge</a>
+                                    <a style="border-style: inset;" title="inset">inset</a>
+                                    <a style="border-style: outset;" title="outset">outset</a>
+                                    <a style="border-style: hidden;" title="hidden">hidden</a>
+                                    <a style="border-style: none;" title="none">none</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ConfRow">
+                    <div class="ConfRowLetra">
+                        Color:
+                    </div>
+                    <div class="ConfRowButton">
+                        <input class="jscolor" id="borderColor" value="1C6EA4" />
+                        <div class="SlideBordeOpacity">
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="100" class="slider2" id="myRange">
+                              </div>
+                        </div>
+                        <span class="resetear" >1</span>
+                    </div>
+                </div>
+                <div class="ConfRow blockfix">
+                    <div class="ConfRowLetra">
+                        Position:
+                    </div>
+                    <div class="ConfRowButton">
+                        <div id="TipoBorde">
+                            <a class="selected" title="border" style="border: 4px solid #1C6EA4;">All</a>
+                            <a title="border-top" style="border-top: 4px solid #1C6EA4;">Top</a>
+                            <a title="border-right" style="border-right: 4px solid #1C6EA4;">Right</a>
+                            <a title="border-bottom" style="border-bottom: 4px solid #1C6EA4;">Bottom</a>
+                            <a title="border-left" style="border-left: 4px solid #1C6EA4;">Left</a>
+                        </div>
+                    </div>
+                </div>
+               
+    </div>
+</body>
+</html>
